@@ -1,0 +1,24 @@
+
+
+/*AddToDo */
+
+.button, .refreshButton{
+  background-color: #4CAF50;
+  border: 1px;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display:flexbox;
+  justify-content: space-around;
+  font-size: 16px;
+  margin: 4px 15px;
+  cursor: pointer;
+}
+
+.input{
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 4px 15px;
+}
