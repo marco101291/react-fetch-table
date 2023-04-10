@@ -4,10 +4,26 @@
   text-align: center;
 }
 
+body{
+  /* Created with https://www.css-gradient.com */
+    /* background: #F7AE1D;
+    background: -webkit-linear-gradient(top left, #F7AE1D, #ED955E);
+    background: -moz-linear-gradient(top left, #F7AE1D, #ED955E); */
+    /* background: linear-gradient(to bottom right, #F7AE1D, #ED955E); */
+    /* Created with https://www.css-gradient.com */
+      /* background: #FCA6E1;
+      background: -webkit-linear-gradient(top left, #FCA6E1, #F70C9E);
+      background: -moz-linear-gradient(top left, #FCA6E1, #F70C9E);
+      background: linear-gradient(to bottom right, #FCA6E1, #F70C9E);
+      height: 100%; */
+}
+
 table,
+tr,
 th,
 td {
-  border: 1px solid black;
+
+  color: white;
 }
 
 

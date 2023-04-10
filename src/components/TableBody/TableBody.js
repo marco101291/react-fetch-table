@@ -14,7 +14,7 @@ const TableBody = ({ tableData, dataHeaders, rowsPerPage, styles }) => {
 
     return (
         <>
-            <table className={tableStyles.tableBody} style={{marginTop: 0, marginLeft: 'auto'}}>
+            <table className={tableStyles.tableBody} style={{ marginTop: 0, marginLeft: 'auto', border: 0,  backgroundColor: 'transparent' }}>
                 <tr>
                     {dataHeaders.map((data, index) => {
                         return <th key={index}>{data.header}</th>;
@@ -22,7 +22,7 @@ const TableBody = ({ tableData, dataHeaders, rowsPerPage, styles }) => {
                 </tr>
                 {pageDivision.map((data) => {
                     return (
-                        <tr >
+                        <tr>
                             <td>{data.id}</td>
                             <td>{data.userId}</td>
                             <td>{data.title}</td>

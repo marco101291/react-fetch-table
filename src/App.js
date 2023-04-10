@@ -6,6 +6,7 @@ import AddToDo from "./components/AddToDo/AddToDo";
 import Spinner from "./components/Spinner/Spinner";
 import ErrorScreen from './pages/ErrorScreen';
 import RefreshBtn from "./components/RefreshBtn/RefreshBtn";
+import VisibleRows from "./components/VisibleRows/VisibleRows";
 
 
 
@@ -14,7 +15,9 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const rowsPerPage = 10;
+  const [rowsPerPage, setRowsPerPage] = useState(10);
+
+ 
 
   const tableHeaders = [
     { header: "#" },
@@ -65,15 +68,13 @@ export default function App() {
                 <RefreshBtn refreshBtn={refreshBtn} />
               </div>
               <TableBody tableData={tableData} dataHeaders={tableHeaders} rowsPerPage={rowsPerPage} styles={styles} />
+              <VisibleRows rowsPerPage={rowsPerPage} setRowsPerPage={setRowsPerPage}/>
             </div>
           ) : (
             <div className="spinner-center">
               <Spinner />
             </div>
           )}
-
-
-
     </>
 
   );
