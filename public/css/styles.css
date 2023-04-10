@@ -1,0 +1,21 @@
+html {
+  height: 100%;
+}
+
+body {
+  color: white !important;
+  background: #ffb33b;
+  background: -moz-radial-gradient(center, ellipse cover, #ff5221 0%, #ffb33b 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ff5221), color-stop(100%, #ffb33b));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #ff5221 0%, #ffb33b 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #ff5221 0%, #ffb33b 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #ff5221 0%, #ffb33b 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #ff5221 0%, #ffb33b 100%);
+  /* W3C */
+  background-size: 250% 250%;
+}
