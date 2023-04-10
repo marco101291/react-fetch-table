@@ -15,7 +15,7 @@ const usePagination = (tableData, page, rowsPerPage ) =>{
         const pages = setDataPerPage(tableData, page, rowsPerPage);
         setPageDivision([...pages]);
 
-    }, [tableData, setTableRange, page, setPageDivision])
+    }, [tableData, setTableRange, page, setPageDivision, rowsPerPage])
 
     return { pageDivision, range: tableRange}
 }
